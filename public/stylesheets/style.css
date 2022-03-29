@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+body{
+margin: 0;
+padding: 0;
+border-radius: 0px;
+background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
+
+}
+
+
+header{
+max-width: 2440px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+margin: 0 auto;
+Height:93px;
+display: flex;
+align-items: center;
+background: #F5DB13;
+box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+}
+
+ul{
+font-family: 'Karla';
+font-weight: 400;
+font-size: 25px;
+line-height: 29px;
+list-style-type: none;
+display: flex;
+gap: 90px;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+h1{
+justify-content: center;
+
+}
+
+h2{
+font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+position: absolute;
+left: 0.19%;
+right: 0%;
+top: 56.73%;
+bottom: 23.34%;
+}
+
+input{
+
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+position: absolute;
+width: 159px;
+height: 90px;
+left: calc(50% - 159px/2);
+top: calc(50% - 27px/2 - 2.5px);
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 27px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #212121;
+background: #73D677;
+box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+border-radius: 11px;
+}
+
+.btn-mobile{
+display: none;
+cursor: pointer;
+}
+
+.btn-mobile div{
+width: 30px;
+height: 2px;
+background: black;
+margin: 8px;
+}
+
+
+
+@media (max-width: 700px){
+
+.btn-mobile{
+  display: block;
+  justify-content: flex-end;
+}
+
+.links{
+  display: none;
+}
+
+}
