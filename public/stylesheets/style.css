@@ -1,5 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Open+Sans:wght@300&family=Roboto&display=swap');
+*{
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+header{
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+  align-items:center;
+  background-color: #F5DB13;
+  padding: 10px;  
+  color: black;
+  transition: all 0.3;
+  box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
+  font-weight: bold;
+}
+
+
+.mobile-btn{
+  display: none;
+}
+
+.mobile-btn{
+  cursor: pointer;
+}
+
+
+.mobile-btn > div{
+border-radius: 50px;
+height: 5px;
+width: 30px;
+background-color: #000;
+margin: 5px;
+ }  
+
+.navbar > a{
+  font-size: 25px;
+  padding: 0 15px 0 15px;
+  margin: 0 60px 0 0;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.navbar > a:hover{
+  text-decoration: underline;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background: linear-gradient(#F5DB13, #F2B807);
+}
+
+main{
+flex: 1;
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+justify-content: space-between;
+}
+
+main > img{
+  max-width: 792.99px;
+}
+
+main > div{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 0 0 50px;
+}
+
+main > div > h1{
+  font-size: 42px;
+  font-weight: normal;
+  padding: 15px 40px;
+}
+
+main > div > p{
+  font-size: 24px;
+  margin: 35px 0 ;
+  color: #333333;
+ 
+}
+
+button{
+font-weight: bold; 
+font-family: 'Karla';  
+font-size: 23px;  
+height: 66px;
+width: 233px;
+display: block;
+background: #73D677;
+box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+border-radius: 11px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 315px;
+  align-items: center;
+}
+.botao-flutuante{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 64px;
+  height: 64px;
+  transition: all 0.8s;
+}
+
+.botao-flutuante > img{
+width: 100%;
+}
+
+.botao-flutuante:hover{
+
+  width: 96px;
+  height: 96px;
+}
+
+.dark-mode{
+  background-color: #434249;
+}
+
+.dark-mode > nav > a{
+  color: azure;
+}
+
+.dark-mode .texto{
+  color: azure;
+}
+.dark-mode .paragrafo{
+  color: azure;
+}
+
+.dark-mode > footer > p{
+  color: azure;
+}
+
+
+@media (max-width: 979px){
+ 
+ main{
+   display: flex;
+   flex-wrap: wrap;
+ } 
+ .navbar > a{
+   display: none;
+ } 
+
+.mobile-btn{
+  display: block;
+ }
+}
+
+
+
+/*
 body{
 margin: 0;
 padding: 0;

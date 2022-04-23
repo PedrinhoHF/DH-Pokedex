@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header class="<%=darkMode ? 'dark-mode': '' %>">
+      <img src="/images/Logo.svg" alt="Logo" />
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Pokédex</a>
+        <a href="#">Legendaries</a>
+        <a href="#">Documentation</a>
+        <a href="login">Login</a>
+      </nav>
+      <div class="mobile-btn">
+        <div class="linha1"></div>
+        <div class="linha2"></div>
+        <div class="linha3"></div>
+      </div>
+    </header>
+
+    <main class="<%=darkMode ? 'dark-mode': '' %>">
+      <img src="/images/banner.svg" alt="Pikachu" />
+      <div class="texto">
+        <h1>
+          <strong>Find</strong> all your favorite <strong>Pokemon</strong>
+        </h1>
+        <p class="paragrafo">
+          You can know the type of Pokemon, its strengths, disadvantages and
+          abilities
+        </p>
+        <button>See pokemons</button>
+      </div>
+      <a href="dark-mode" class="botao-flutuante">
+        <img src="/images/Pokeball1.svg" />
+      </a>
+    </main>
+
+    <footer class="<%=darkMode ? 'dark-mode': '' %>">
+      <p>Make with ❤️ for the PokéSpartans team Platzi Master</p>
+      <p>Ours team</p>
+    </footer>
   </body>
 </html>

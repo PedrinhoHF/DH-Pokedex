@@ -1,9 +1,14 @@
 const express = require('express');
 const router = express.Router();
+const auth = require('../middlewares/auth')
+const legendaryValidator = require('../middlewares/legendaryValidator');
 
 const controller = require('../controller/legendariesController');
 
-router.get('/pineco', controller.getOnelegendary);
 router.get('/all', controller.getAllegendary);
-router.post('/new',controller.postOnelegendary);
-module.exports = router
+router.post('/', auth, legendaryValidator, controller.create);
+
+router.get('/', controller.getOnelegendary);
+
+
+module.exports = router;
